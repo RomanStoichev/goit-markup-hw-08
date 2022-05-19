@@ -17,12 +17,20 @@
   &__list {
     display: flex;
     margin-left: 93px;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
   }
   .site-logo {
     font-size: 26px;
     line-height: 31px;
     padding-top: 24px;
     padding-bottom: 25px;
+  }
+  @media screen and (max-width: 767px) {
+    display: block;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
 
@@ -53,16 +61,20 @@
 /* header-contacts */
 
 .contacts__list {
-  display: flex;
+  // display: flex;
   margin-left: auto;
   align-items: center;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 .phone {
   margin-left: 50px;
 
   &__link {
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
     padding: 32px 0;
     font-weight: 500;
     font-size: 14px;
@@ -80,13 +92,13 @@
   }
 }
 .mail {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
+  // display: flex;
+  // flex-direction: row-reverse;
+  // align-items: center;
 
   &__link {
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
     padding: 32px 0;
     font-weight: 500;
     font-size: 14px;

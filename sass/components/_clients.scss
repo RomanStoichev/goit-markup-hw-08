@@ -1,7 +1,14 @@
 /* CLIENTS */
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @media (max-width: 767px) {
+    width: 480px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &__title {
     color: $title-text-color;
@@ -12,16 +19,27 @@
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 50px;
+    @media (max-width: 1199px) {
+      font-size: 28px;
+      line-height: 33px;
+      margin-bottom: 30px;
+    }
   }
 }
 
 .clients-list {
   display: flex;
   align-items: center;
+  @media (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
 }
 .clients-list__item {
   & + & {
     margin-left: 30px;
+  }
+  @media (max-width: 767px) {
+    margin-bottom: 30px;
   }
 }
 
