@@ -1,11 +1,16 @@
 /* OUR TEAM */
 .team {
+  width: 480px;
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    width: 768px;
+  }
   @media (max-width: 1199px) {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: $secondary-background-color;
   }
   @media (min-width: 1200px) {
+    width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
     background-color: $secondary-background-color;
@@ -31,8 +36,21 @@
   //   display: flex;
   // }
 }
+.team__list {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
 
 .team-card {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    margin: 15px;
+  }
   @media (max-width: 767px) {
     width: 450px;
     height: 622px;

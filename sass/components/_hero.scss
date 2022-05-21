@@ -1,20 +1,62 @@
 /* HERO */
-.hero {
-  max-width: 480px;
-  margin: 0 auto;
-  padding: 200px 0;
-  background-color: $background-color-hero-footer;
-  background-image: linear-gradient(#2f303a66 40%, #2f303a66 40%),
-    url("../images/Img-hero.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 
-  @media screen and (min-width: 768px) {
+.hero {
+  margin: 0 auto;
+  text-align: center;
+  height: 400px;
+  padding: 118px 0;
+
+  width: 480px;
+  background-image: linear-gradient(to right, #2f303a66, #2f303a66),
+    url(../images/Header-mob-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, #2f303a66, #2f303a66),
+      url(../images/Header-mob-img@2x.jpg);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 768px;
   }
   @media screen and (min-width: 1200px) {
     max-width: 1600px;
+    padding: 200px 0;
+  }
+
+  @media (min-width: 768px) {
+    background-image: linear-gradient(to right, #2f303a66, #2f303a66),
+      url(../images/Header-img.jpg);
+    background-size: cover;
+    background-position: center;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, #2f303a66, #2f303a66),
+        url(../images/Header-img@2x.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  @media (min-width: 1200px) {
+    height: 600px;
+    background-image: linear-gradient(to right, #2f303a66, #2f303a66),
+      url(../images/Img-hero.jpg);
+    background-position: center;
+    background-size: cover;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, #2f303a66, #2f303a66),
+        url(../images/Img-hero@2x.jpg);
+      background-position: center;
+      background-size: cover;
+    }
   }
   &__title {
     color: $primary-background-color;
@@ -28,7 +70,7 @@
     width: 696px;
     margin: 0 auto;
     margin-bottom: 30px;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
       width: 100%;
       font-size: 26px;
       line-height: 42px;
@@ -38,7 +80,6 @@
     }
   }
 }
-
 .button {
   display: block;
   margin: 0 auto;
