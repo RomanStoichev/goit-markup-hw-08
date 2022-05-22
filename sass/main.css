@@ -1926,7 +1926,6 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 60px;
   margin-bottom: 40px;
 }
 
@@ -1966,6 +1965,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .projects-list {
+    margin: -15px;
+  }
+}
+
 .projects-list__item {
   width: 450px;
   height: 404px;
@@ -1987,9 +1992,11 @@ img {
 @media screen and (min-width: 1200px) {
   .projects-list__item {
     width: 370px;
+    margin-bottom: 0;
+    margin: 15px;
   }
   .projects-list__item:not(:nth-child(3n + 3)) {
-    margin-right: 30px;
+    margin-right: 0;
   }
   .projects-list__item:nth-child(7), .projects-list__item:nth-child(8), .projects-list__item:nth-child(9) {
     margin-bottom: 0;

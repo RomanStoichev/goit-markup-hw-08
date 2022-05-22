@@ -47,7 +47,7 @@
 .list-filters {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 60px;
+
   margin-bottom: 40px;
   @media screen and (min-width: 768px) {
     justify-content: center;
@@ -70,6 +70,9 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 60px;
   }
+  @media screen and (min-width: 1200px) {
+    margin: -15px;
+  }
 }
 .projects-list__item {
   width: 450px;
@@ -86,9 +89,10 @@
   }
   @media screen and (min-width: 1200px) {
     width: 370px;
-
+    margin-bottom: 0;
+    margin: 15px;
     &:not(:nth-child(3n + 3)) {
-      margin-right: 30px;
+      margin-right: 0;
     }
     &:nth-child(7),
     &:nth-child(8),
