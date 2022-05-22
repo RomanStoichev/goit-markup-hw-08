@@ -1,9 +1,12 @@
 /* OUR TEAM */
 .team {
+  margin: 0 auto;
   background-color: $secondary-background-color;
   padding-top: 60px;
   padding-bottom: 60px;
   max-width: 480px;
+  display: flex;
+  justify-content: center;
   @media screen and (min-width: 767px) and (max-width: 1199px) {
     width: 768px;
   }

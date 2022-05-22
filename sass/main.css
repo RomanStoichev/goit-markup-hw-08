@@ -91,6 +91,7 @@ img {
 /* END LOGO */
 .header {
   position: relative;
+  margin: 0 auto;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -643,6 +644,7 @@ img {
 .features {
   padding-top: 60px;
   padding-bottom: 60px;
+  margin: 0 auto;
   width: 480px;
 }
 
@@ -774,6 +776,8 @@ img {
 }
 
 .features__title {
+  text-align: center;
+  margin: 0 auto;
   margin-bottom: 10px;
   color: #212121;
   font-weight: 700;
@@ -858,10 +862,17 @@ img {
 /* END WORK  */
 /* OUR TEAM */
 .team {
+  margin: 0 auto;
   background-color: #f5f4fa;
   padding-top: 60px;
   padding-bottom: 60px;
   max-width: 480px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (min-width: 767px) and (max-width: 1199px) {
@@ -1087,9 +1098,16 @@ img {
 /* END OUR TEAM */
 /* CLIENTS */
 .clients {
+  margin: 0 auto;
   max-width: 480px;
   padding-top: 60px;
   padding-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1216,6 +1234,7 @@ img {
 /* END CLIENTS */
 /* FOOTER */
 .footer {
+  margin: 0 auto;
   padding: 60px 0;
   background-color: #2f303a;
   width: 480px;
