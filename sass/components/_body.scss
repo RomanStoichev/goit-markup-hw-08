@@ -8,16 +8,20 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-// main {
-//   // @media screen and (min-width: 780px) {
-//   //   width: 780px;
-//   // }
-//   // @media screen and (min-width: 1200px) {
-//   //   width: 1200px;
-//   // }
-// }
+
 .portfolio-body {
+  margin: 0 auto;
   background-color: $primary-background-color;
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 780px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 h1,
 h2,
@@ -42,7 +46,7 @@ a {
   }
 
   @media screen and (min-width: 780px) {
-    width: 780px;
+    width: 768px;
   }
   @media screen and (min-width: 1200px) {
     width: 1200px;
