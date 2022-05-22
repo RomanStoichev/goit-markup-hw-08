@@ -6,18 +6,32 @@
   letter-spacing: 0.02em;
   border-bottom: 1px solid #ececec;
   background-color: $primary-background-color;
+  width: 480px;
+  @media (min-width: 768px) {
+    width: 768px;
+  }
+  @media (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 .mobile-container {
+  position: relative;
+  display: flex;
+  align-items: center;
   @media (max-width: 767px) {
+    width: 480px;
     height: 60px;
   }
   @media (min-width: 768px) {
+    width: 768px;
     height: 80px;
   }
-  @media (min-width: 325px) {
-    display: flex;
-    align-items: center;
+  @media (min-width: 325px) and (max-width: 767px) {
     justify-content: space-between;
+  }
+  @media (min-width: 1200px) {
+    width: 1200px;
+    margin: 0;
   }
 }
 
@@ -47,15 +61,14 @@
 
   @media (min-width: 768px) {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 768px;
-    justify-content: space-between;
-    align-items: center;
+    // margin-left: auto;
+    // margin-right: auto;
+    // width: 768px;
+    // justify-content: space-between;
+    // align-items: center;
   }
 
   @media (min-width: 1200px) {
-    width: 1200px;
   }
 }
 .menu-socials {
@@ -79,6 +92,12 @@
 }
 
 .menu-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
   display: inline-flex;
   border: none;
   background-color: transparent;
@@ -119,6 +138,8 @@
   @media (min-width: 768px) {
     display: flex;
     align-items: center;
+    margin-left: 88px;
+    // margin-right: 84px;
   }
 }
 
@@ -137,7 +158,8 @@
 
   @media (min-width: 768px) {
     display: flex;
-    margin-left: 88px;
+    // margin-left: 88px;
+    justify-content: center;
   }
   @media (min-width: 1200px) {
     margin-left: 93px;
@@ -185,20 +207,22 @@
 
 .contacts-list {
   display: flex;
-  flex-direction: column-reverse;
+
   list-style: none;
   padding: 0;
   margin-top: 0;
   margin-bottom: 0;
+  @media screen and (max-width: 767px) {
+    flex-direction: column-reverse;
+  }
   @media (min-width: 768px) and (max-width: 1199px) {
-    display: flex;
     flex-direction: column;
     margin-left: auto;
     justify-content: center;
-    margin-left: auto;
   }
   @media (min-width: 1200px) {
     display: flex;
+    align-items: center;
     list-style: none;
     padding: 0;
     margin-left: auto;
