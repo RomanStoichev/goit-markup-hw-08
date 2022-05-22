@@ -7,35 +7,6 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  max-width: 480px;
-}
-
-@media screen and (min-width: 780px) {
-  body {
-    width: 780px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  body {
-    width: 1200px;
-  }
-}
-
-main {
-  max-width: 480px;
-}
-
-@media screen and (min-width: 780px) {
-  main {
-    width: 780px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  main {
-    width: 1200px;
-  }
 }
 
 .portfolio-body {
@@ -63,19 +34,6 @@ a {
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
-  max-width: 480px;
-}
-
-@media screen and (min-width: 780px) {
-  .container {
-    width: 780px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
 }
 
 .visually-hidden {
@@ -682,16 +640,23 @@ img {
     padding: 94px 0;
     background-color: #ffffff;
   }
+}
+
+.features__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
   .features__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
   }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 767px) {
+@media (min-width: 1200px) {
   .features__list {
-    display: block;
+    width: 1200px;
   }
 }
 
@@ -733,8 +698,17 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media (min-width: 1200px) {
+  .features__items {
+    width: 270px;
+  }
   .features__items + .features__items {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .features__items {
     margin-left: 0;
   }
 }
@@ -767,6 +741,12 @@ img {
   .features__icon {
     width: 354px;
     height: 120px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .features__icon {
+    width: 270px;
   }
 }
 
@@ -860,7 +840,7 @@ img {
 /* END WORK  */
 /* OUR TEAM */
 .team {
-  width: 480px;
+  max-width: 480px;
 }
 
 @media screen and (min-width: 767px) and (max-width: 1199px) {
@@ -917,6 +897,14 @@ img {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin: -15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
