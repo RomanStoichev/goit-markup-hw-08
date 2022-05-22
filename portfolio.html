@@ -21,44 +21,90 @@
     <!-- Навигация-->
     <header class="header">
       <div class="container">
-        <div class="header__inner">
-          <nav class="nav">
-            <a href="./index.html" class="site-logo">
-              <p><span class="logo">Web</span>Studio</p></a
-            >
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a href="./index.html" class="nav__link">Студия</a>
-              </li>
-              <li class="nav__item">
-                <a href="./portfolio.html" class="nav__link nav__link--current"
-                  >Портфолио</a
+        <div class="mobile-container">
+          <a href="./index.html" class="site-logo">
+            <p><span class="logo">Web</span>Studio</p></a
+          ><button
+            class="menu-button"
+            type="button"
+            aria-label="mobile menu switcher"
+            aria-expanded="false"
+            data-menu-button
+          >
+            <svg class="menu-button__icons" width="40px" height="40px">
+              <use
+                href="./sprite.svg#nav-close"
+                class="menu-button__icon--cross"
+                width="19"
+              ></use>
+              <use
+                href="./sprite.svg#nav-menu"
+                class="menu-button__icon--menu"
+                width="24"
+              ></use>
+            </svg>
+          </button>
+          <div class="menu-container" data-menu>
+            <nav class="nav">
+              <ul class="nav-list">
+                <li class="nav-list__item">
+                  <a href="./index.html" class="nav-list__link">Студия</a>
+                </li>
+                <li class="nav-list__item">
+                  <a
+                    href="./portfolio.html"
+                    class="nav-list__link nav-list__link--current"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="nav-list__item">
+                  <a href="" class="nav-list__link"> Контакты</a>
+                </li>
+              </ul>
+            </nav>
+
+            <ul class="contacts-list">
+              <li class="contacts-list__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="contacts-list__link contacts-list__link--mail"
                 >
+                  info@devstudio.com
+                  <svg class="contacts-list__icon--mail" width="16px">
+                    <use href="./sprite.svg#icon-mail"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="nav__item">
-                <a href="" class="nav__link"> Контакты</a>
+              <li class="contacts-list__item">
+                <a
+                  href="tel:+380961111111"
+                  class="contacts-list__link contacts-list__link--phone"
+                >
+                  +38096 111 11 11<svg
+                    class="contacts-list__icon--phone"
+                    width="10px"
+                  >
+                    <use href="./sprite.svg#icon-phone"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </nav>
 
-          <ul class="contacts__list">
-            <li class="mail">
-              <a href="mailto:info@devstudio.com" class="mail__link">
-                <svg class="mail__icon">
-                  <use href="./sprite.svg#icon-mail"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="phone">
-              <a href="tel:+380961111111" class="phone__link">
-                <svg class="phone__icon">
-                  <use href="./sprite.svg#icon-phone"></use>
-                </svg>
-                +38096 111 11 11
-              </a>
-            </li>
-          </ul>
+            <ul class="menu-socials">
+              <li class="menu-socials__item">
+                <a href="#" class="menu-socials__link">Instagram</a>
+              </li>
+              <li class="menu-socials__item">
+                <a href="#" class="menu-socials__link">Twitter</a>
+              </li>
+              <li class="menu-socials__item">
+                <a href="#" class="menu-socials__link">Facebook</a>
+              </li>
+              <li class="menu-socials__item">
+                <a href="#" class="menu-socials__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -100,7 +146,7 @@
                     "
                     src="./images/Технокряк.jpg"
                     alt="веб-сайт Технокряк"
-                    width="370"
+                    
                     class="projects-list__img"
                   />
                   <div class="projects-overlay">
@@ -129,7 +175,7 @@
                     "
                     src="./images/NewOrlean.jpg"
                     alt="постер NewOrlean vs GoldenStar"
-                    width="370"
+                    
                     class="projects-list__img"
                   />
                   <div class="projects-overlay">
@@ -180,7 +226,7 @@
                     srcset="./images/prime.jpg 1x, ./images/prime@2x.jpg 2x"
                     src="./images/prime.jpg"
                     alt="проект Prime"
-                    width="370"
+                    
                     class="projects-list__img"
                   />
                   <div class="projects-overlay">
@@ -205,7 +251,7 @@
                     srcset="./images/boxes.jpg 1x, ./images/boxes@2x.jpg 2x"
                     src="./images/boxes.jpg"
                     alt="проект Boxes"
-                    width="370"
+                    
                     class="projects-list__img"
                   />
                   <div class="projects-overlay">
@@ -233,7 +279,7 @@
                     "
                     src="./images/inspirations.jpg"
                     alt="Inspirations has no Bordes"
-                    width="370"
+                   
                     class="projects-list__img"
                   />
                   <div class="projects-overlay">
@@ -263,7 +309,7 @@
                     "
                     src="./images/limited-edition.jpg"
                     alt="Издание Limited Edition"
-                    width="370"
+                    
                     class="projects-list__img"
                   />
                   <div class="projects-overlay">
@@ -288,7 +334,7 @@
                     srcset="./images/lab.jpg 1x, ./images/lab@2x.jpg 2x"
                     src="./images/lab.jpg"
                     alt="Проект LAB"
-                    width="370"
+                   
                     class="projects-list__img"
                   />
                   <div class="projects-overlay">
@@ -317,7 +363,7 @@
                     "
                     src="./images/growing-busines.jpg"
                     alt="Growing Business"
-                    width="370"
+                    
                     class="projects-list__img"
                   />
                   <div class="projects-overlay">
