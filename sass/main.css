@@ -1646,12 +1646,21 @@ img {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
+  padding: 40px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media (min-width: 1200px) {
+  .modal__inner {
+    width: 528px;
+    height: 581px;
+    padding: 15px;
+  }
 }
 
 .modal-close {
@@ -1685,10 +1694,6 @@ img {
 }
 
 /* Modal Form */
-.modal-form {
-  padding: 40px;
-}
-
 .modal-form__title {
   margin-bottom: 12px;
   font-style: normal;
@@ -1724,13 +1729,19 @@ img {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  width: 448px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: #757575;
   margin-bottom: 10px;
+  width: 410px;
+}
+
+@media (min-width: 1200px) {
+  .modal-form__item {
+    width: 448px;
+  }
 }
 
 .modal-form__item:not(:last-child) {
@@ -1753,17 +1764,23 @@ img {
 }
 
 .modal-form__name {
-  width: 448px;
+  width: 410px;
   height: 40px;
   background: #ffffff;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 42px;
   margin-top: 4px;
+}
+
+@media (min-width: 1200px) {
+  .modal-form__name {
+    width: 448px;
+  }
 }
 
 .modal-form__tel {
-  width: 448px;
+  width: 410px;
   height: 40px;
   background: #ffffff;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1772,14 +1789,26 @@ img {
   margin-top: 4px;
 }
 
+@media (min-width: 1200px) {
+  .modal-form__tel {
+    width: 448px;
+  }
+}
+
 .modal-form__mail {
-  width: 448px;
+  width: 410px;
   height: 40px;
   background: #ffffff;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 42px;
   margin-top: 4px;
+}
+
+@media (min-width: 1200px) {
+  .modal-form__mail {
+    width: 448px;
+  }
 }
 
 .modal-form__icon {
@@ -1810,7 +1839,7 @@ img {
 
 .modal-form__textarea {
   display: block;
-  width: 448px;
+  width: 410px;
   height: 120px;
   font-size: 14px;
   line-height: 1.14;
@@ -1823,6 +1852,12 @@ img {
   border-radius: 4px;
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 1200px) {
+  .modal-form__textarea {
+    width: 448px;
+  }
 }
 
 .modal-form__label--textarea:focus-within .modal-form__textarea {
