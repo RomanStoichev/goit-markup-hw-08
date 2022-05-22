@@ -63,6 +63,19 @@ a {
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
+  max-width: 480px;
+}
+
+@media screen and (min-width: 780px) {
+  .container {
+    width: 780px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .visually-hidden {
