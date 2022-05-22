@@ -1,19 +1,17 @@
 /* OUR TEAM */
 .team {
+  background-color: $secondary-background-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
   max-width: 480px;
   @media screen and (min-width: 767px) and (max-width: 1199px) {
     width: 768px;
   }
-  @media (max-width: 1199px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: $secondary-background-color;
-  }
+
   @media (min-width: 1200px) {
     width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
-    background-color: $secondary-background-color;
   }
   &__title {
     color: $title-text-color;
