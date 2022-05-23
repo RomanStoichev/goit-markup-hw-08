@@ -1745,10 +1745,16 @@ img {
 /* END BUTTONS FILTERS */
 @media screen and (min-width: 768px) {
   .projects-list {
-    margin-bottom: 60px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
@@ -1767,24 +1773,18 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .projects-list__item:not(:nth-child(2n)) {
-    margin-right: 30px;
-  }
-  .projects-list__item:nth-child(9) {
-    margin-bottom: 0;
+  .projects-list__item {
+    -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);
+        flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .projects-list__item {
-    margin-bottom: 0;
+    -ms-flex-preferred-size: calc((100% - 6 * 15px) / 3);
+        flex-basis: calc((100% - 6 * 15px) / 3);
     margin: 15px;
-  }
-  .projects-list__item:not(:nth-child(3n + 3)) {
-    margin-right: 0;
-  }
-  .projects-list__item:nth-child(7), .projects-list__item:nth-child(8), .projects-list__item:nth-child(9) {
-    margin-bottom: 0;
   }
 }
 
