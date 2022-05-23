@@ -1,23 +1,13 @@
 // HEADER
 .header {
   position: relative;
-  margin: 0 auto;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   border-bottom: 1px solid #ececec;
   background-color: $primary-background-color;
-  width: 480px;
-  height: 60px;
-
-  @media (min-width: 768px) {
-    width: 768px;
-    height: 80px;
-  }
-  @media (min-width: 1200px) {
-    width: 1200px;
-  }
 }
 .mobile-container {
   position: relative;
@@ -53,11 +43,6 @@
   @media (min-width: 768px) {
     display: flex;
     width: 100%;
-    // margin-left: auto;
-    // margin-right: auto;
-    // width: 768px;
-    // justify-content: space-between;
-    // align-items: center;
   }
 
   @media (min-width: 1200px) {
@@ -132,11 +117,6 @@
   @media (min-width: 768px) {
     display: flex;
     align-items: center;
-
-    // margin-right: 84px;
-  }
-  @media (min-width: 768px) and (max-width: 1199px) {
-    margin-left: 88px;
   }
 }
 
@@ -155,11 +135,8 @@
 
   @media (min-width: 768px) {
     display: flex;
-    // margin-left: 88px;
+
     justify-content: center;
-  }
-  @media (min-width: 1200px) {
-    margin-left: 93px;
   }
 }
 .nav-list__item {
@@ -332,6 +309,9 @@
 .header__logo {
   padding-top: 16px;
   padding-bottom: 16px;
+  @media (min-width: 768px) {
+    margin-right: 93px;
+  }
 }
 
 // END HEADER
