@@ -188,13 +188,22 @@
           <ul class="work__list">
             <li class="work__item">
               <div class="work__thumb">
-                <img
-                  class="work__img"
-                  srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x"
-                  src="./images/img1.jpg"
-                  alt="работа программиста"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img/img1-desctop.jpg    1x,
+                      ./images/img/img1-desctop@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                    type="image/jpg"
+                  />
+                  <img
+                    class="work__img"
+                    src="./images/img1.jpg"
+                    alt="работа программиста"
+                    width=""
+                  />
+                </picture>
                 <div class="work__bunner">
                   <p class="work__text">Десктопные приложения</p>
                 </div>
@@ -202,13 +211,22 @@
             </li>
             <li class="work__item">
               <div class="work__thumb">
-                <img
-                  class="work__img"
-                  srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x"
-                  src="./images/img2.jpg"
-                  alt="разработка мобильных приложений"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img/img2-desctop.jpg    1x,
+                      ./images/img/img2-desctop@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                    type="image/jpg"
+                  />
+                  <img
+                    class="work__img"
+                    src="./images/img2.jpg"
+                    alt="разработка мобильных приложений"
+                    width=""
+                  />
+                </picture>
                 <div class="work__bunner">
                   <p class="work__text">Мобильные приложения</p>
                 </div>
@@ -216,13 +234,22 @@
             </li>
             <li class="work__item">
               <div class="work__thumb">
-                <img
-                  class="work__img"
-                  srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x"
-                  src="./images/img3.jpg"
-                  alt="работа дизайнера"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img/img3-desctop.jpg    1x,
+                      ./images/img/img3-desctop@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                    type="image/jpg"
+                  />
+                  <img
+                    class="work__img"
+                    src="./images/img3.jpg"
+                    alt="работа дизайнера"
+                    width=""
+                  />
+                </picture>
                 <div class="work__bunner">
                   <p class="work__text">Дизайнерские решения</p>
                 </div>
@@ -237,13 +264,39 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team-card">
-              <img
-                srcset="./images/id.jpg 1x, ./images/id@2x.jpg 2x"
-                src="./images/id.jpg"
-                alt="дизайнер продукта"
-                width=""
-                class="team-card__img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img/id-desctop.jpg    1x,
+                    ./images/img/id-desctop@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/img/id-tablet.jpg    1x,
+                    ./images/img/id-tablet@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/img/id-mobile.jpg    1x,
+                    ./images/img/id-mobile@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/id.jpg"
+                  alt="дизайнер продукта"
+                  width=""
+                  class="team-card__img"
+                />
+              </picture>
+
               <div class="team-card__thumb">
                 <h3 class="team-card__title">Игорь Демьяненко</h3>
                 <p class="team-card__text">Product Designer</p>
@@ -280,13 +333,38 @@
               </div>
             </li>
             <li class="team-card">
-              <img
-                srcset="./images/or.jpg 1x, ./images/or@2x.jpg 2x"
-                src="./images/or.jpg"
-                alt="фронтэнд девелопер"
-                width=""
-                class="team-card__img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img/or-desctop.jpg    1x,
+                    ./images/img/or-desctop@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/img/or-tablet.jpg    1x,
+                    ./images/img/or-tablet@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/img/or-mobile.jpg    1x,
+                    ./images/img/or-mobile@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/or.jpg"
+                  alt="фронтэнд девелопер"
+                  width=""
+                  class="team-card__img"
+                />
+              </picture>
               <div class="team-card__thumb">
                 <h3 class="team-card__title">Ольга Репина</h3>
                 <p class="team-card__text">Frontend Developer</p>
@@ -323,13 +401,38 @@
               </div>
             </li>
             <li class="team-card">
-              <img
-                srcset="./images/nt.jpg 1x, ./images/nt@2x.jpg 2x"
-                src="./images/nt.jpg"
-                alt="маркетолог"
-                width=""
-                class="team-card__img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img/nt-desctop.jpg    1x,
+                    ./images/img/nt-desctop@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/img/nt-tablet.jpg    1x,
+                    ./images/img/nt-tablet@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/img/nt-mobile.jpg    1x,
+                    ./images/img/nt-mobile@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/nt.jpg"
+                  alt="маркетолог"
+                  width=""
+                  class="team-card__img"
+                />
+              </picture>
               <div class="team-card__thumb">
                 <h3 class="team-card__title">Николай Тарасов</h3>
                 <p class="team-card__text">Marketing</p>
@@ -366,13 +469,38 @@
               </div>
             </li>
             <li class="team-card">
-              <img
-                srcset="./images/me.jpg 1x, ./images/me@2x.jpg 2x"
-                src="./images/me.jpg"
-                alt="UI дизайнер"
-                width=""
-                class="team-card__img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img/me-desctop.jpg    1x,
+                    ./images/img/me-desctop@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/img/me-tablet.jpg    1x,
+                    ./images/img/me-tablet@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/img/me-mobile.jpg    1x,
+                    ./images/img/me-mobile@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/me.jpg"
+                  alt="UI дизайнер"
+                  width=""
+                  class="team-card__img"
+                />
+              </picture>
               <div class="team-card__thumb">
                 <h3 class="team-card__title">Михаил Ермаков</h3>
                 <p class="team-card__text">UI Desіgner</p>
