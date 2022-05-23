@@ -175,6 +175,8 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
+    padding: 48px 40px;
+    margin: 0;
     background-color: #ffffff;
     z-index: 20;
   }
@@ -260,6 +262,7 @@ img {
 
 .menu-button.is-open {
   z-index: 30;
+  position: fixed;
 }
 
 .menu-button.is-open .menu-button__icon--menu {
