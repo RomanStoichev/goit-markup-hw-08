@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* BODY RULES*/
 body {
   font-family: "Roboto", sans-serif;
@@ -1381,7 +1382,7 @@ img {
   .modal__inner {
     width: 528px;
     height: 581px;
-    padding: 15px;
+    padding: 40px;
   }
 }
 
@@ -1457,21 +1458,20 @@ img {
   letter-spacing: 0.01em;
   color: #757575;
   margin-bottom: 10px;
-  width: 410px;
-}
-
-@media (min-width: 1200px) {
-  .modal-form__item {
-    width: 448px;
-  }
+  width: 100%;
 }
 
 .modal-form__item:not(:last-child) {
   margin-bottom: 10px;
 }
 
+.modal-form__item—textarea {
+  width: 100%;
+}
+
 .modal-form__label {
   position: relative;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1486,51 +1486,33 @@ img {
 }
 
 .modal-form__name {
-  width: 410px;
+  width: 100%;
   height: 40px;
   background: #ffffff;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 42px;
   margin-top: 4px;
-}
-
-@media (min-width: 1200px) {
-  .modal-form__name {
-    width: 448px;
-  }
 }
 
 .modal-form__tel {
-  width: 410px;
+  width: 100%;
   height: 40px;
   background: #ffffff;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 42px;
   margin-top: 4px;
-}
-
-@media (min-width: 1200px) {
-  .modal-form__tel {
-    width: 448px;
-  }
 }
 
 .modal-form__mail {
-  width: 410px;
+  width: 100%;
   height: 40px;
   background: #ffffff;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 42px;
   margin-top: 4px;
-}
-
-@media (min-width: 1200px) {
-  .modal-form__mail {
-    width: 448px;
-  }
 }
 
 .modal-form__icon {
@@ -1557,11 +1539,12 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   color: #757575;
+  width: 100%;
 }
 
 .modal-form__textarea {
   display: block;
-  width: 410px;
+  width: 100%;
   height: 120px;
   font-size: 14px;
   line-height: 1.14;
@@ -1574,12 +1557,6 @@ img {
   border-radius: 4px;
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@media (min-width: 1200px) {
-  .modal-form__textarea {
-    width: 448px;
-  }
 }
 
 .modal-form__label--textarea:focus-within .modal-form__textarea {

@@ -37,7 +37,7 @@
   @media (min-width: 1200px) {
     width: 528px;
     height: 581px;
-    padding: 15px;
+    padding: 40px;
   }
 }
 
@@ -106,19 +106,18 @@
 
   color: $primary-text-color;
   margin-bottom: 10px;
-  width: 410px;
-  @media (min-width: 1200px) {
-    width: 448px;
-  }
+  width: 100%;
 
   &:not(:last-child) {
     margin-bottom: 10px;
   }
 }
-
+.modal-form__item—textarea {
+  width: 100%;
+}
 .modal-form__label {
   position: relative;
-
+  width: 100%;
   display: flex;
   flex-direction: column;
   font-weight: 400;
@@ -127,10 +126,7 @@
   letter-spacing: 0.01em;
 }
 .modal-form__name {
-  width: 410px;
-  @media (min-width: 1200px) {
-    width: 448px;
-  }
+  width: 100%;
 
   height: 40px;
   background: $primary-background-color;
@@ -141,10 +137,7 @@
 }
 
 .modal-form__tel {
-  width: 410px;
-  @media (min-width: 1200px) {
-    width: 448px;
-  }
+  width: 100%;
   height: 40px;
   background: $primary-background-color;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -154,10 +147,7 @@
 }
 
 .modal-form__mail {
-  width: 410px;
-  @media (min-width: 1200px) {
-    width: 448px;
-  }
+  width: 100%;
   height: 40px;
   background: $primary-background-color;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -181,13 +171,12 @@
   display: flex;
   flex-direction: column;
   color: $primary-text-color;
+  width: 100%;
 }
 .modal-form__textarea {
   display: block;
-  width: 410px;
-  @media (min-width: 1200px) {
-    width: 448px;
-  }
+  width: 100%;
+
   height: 120px;
   font-size: 14px;
   line-height: 1.14;
