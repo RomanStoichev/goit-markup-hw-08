@@ -231,7 +231,7 @@ img {
   fill: currentColor;
 }
 
-.menu-button__icons:hover, .menu-button__iconsfocus {
+.menu-button__icons:hover, .menu-button__icons:focus {
   fill: #2196f3;
 }
 
