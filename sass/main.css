@@ -1622,10 +1622,17 @@ img {
 
 .modal-checkbox__link {
   margin-left: 6px;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16em;
   letter-spacing: 0.03em;
   color: #2196f3;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-checkbox__link {
+    font-size: 14px;
+    line-height: 1.71em;
+  }
 }
 
 .modal-button {
